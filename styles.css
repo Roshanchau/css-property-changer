@@ -1,0 +1,160 @@
+/* reset */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.father{
+    position: absolute;
+    top: 40%;
+}
+.static{
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    margin-left: 40px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+.containers{
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.blocks{
+    background-color: rgb(68,68,68);
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+.slidecontainerY input[type="range"]{
+    transform: rotateZ(-270deg);
+    width: 38%;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+}
+
+span{
+    font-size: 15px;
+}
+
+ .y-start{
+    position: absolute;
+    right: 40%;
+    top: 35%;
+}
+
+.y-end{
+    position: absolute;
+    right: 31%;
+    bottom: 27%;
+}
+
+.slidecontainerX input[type="range"]{
+    position: absolute;
+    top: 50%;
+    right: 28%;
+    width: 45%;
+}
+
+.x-start{
+    position: absolute;
+    top: 40%;
+    left: 29%;
+}
+.x-end{
+    position: absolute;
+    top: 40%;
+    right: 29%;
+}
+.slidecontainerS input[type="range"]{
+    position: absolute;
+    top: 50%;
+    right: 28%;
+    width: 45%;
+}
+
+.s-start{
+    position: absolute;
+    top: 40%;
+    left: 29%;
+}
+.s-end{
+    position: absolute;
+    top: 40%;
+    right: 29%;
+}
+
+form{
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    margin-top: 12px;
+}
+form select{
+    margin: 10px auto;
+}
+
+form input{
+    margin:  10px auto;
+    width: 25%;
+    height: 50%;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.color{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.color input[type="range"]{
+    width: 45%;
+    margin: 5px auto;
+}
+
+.r{
+    position: absolute;
+    right: 40px;
+    top: 74px;
+}
+.g{
+    position: absolute;
+    right: 40px;
+    top: 100px;
+}
+.b{
+    position: absolute;
+    right: 40px;
+    bottom: 54px;
+}
+.a{
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+}
+
+/* dynamic class */
+/* .shape{
+    border-radius: 50%;
+} */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>CSS Propety Changer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="father">
+        <div class="static"></div>
+    </div>
+    <div class="containers">
+        <div class="blocks">
+            <p>Position Y</p>
+            <div class="slidecontainerY">
+                <input type="range" class="myrange" min="0" max="500" value="0">
+            </div>
+            <span class="y-start">0</span>
+            <span class="y-end">500</span>
+        </div>
+        <div class="blocks">
+            <p>Position X</p>
+            <div class="slidecontainerX">
+                <input type="range" min="0" max="1000" value="0">
+            </div>
+            <span class="x-start">0</span>
+            <span class="x-end">1000</span>
+        </div>
+        <div class="blocks">
+            <p>Size</p>
+            <div class="slidecontainerS">
+                <input type="range" min="0" max="500" value="0">
+                <span class="s-start">0</span>
+                <span class="s-end">2</span>
+            </div>
+        </div>
+        <div class="blocks">
+            <p>Shape</p>
+            <form>
+                <select name="url" style="width: 80px; height: 30px; font-size: 15px;
+                padding: 2px; border: none;
+                outline: none;">
+                    <option value="1">Square</option>
+                    <option value="2">Circle</option>
+                </select> <input type="button" value="ok">
+            </form>
+        </div>
+        <div class="blocks">
+            <p>RGBA</p>
+            <div class="color">
+                <input class="red" type="range" min="0" max="255" value="0">
+                <input class="green" type="range" min="0" max="255" value="0">
+                <input class="blue" type="range" min="0" max="255" value="0">
+                <input class="aqua" step="0.01" type="range" min="0" max="1" value="1">
+            </div>
+            <span class="r">r</span>
+            <span class="g">g</span>
+            <span class="b">b</span>
+            <span class="a">a</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
